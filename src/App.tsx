@@ -1,24 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import PostPreviewContainer from './PostPreviewContainer';
+import circularPfp from './pfp-circular.png'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <header className="text-start m-4">
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          <h1>
+            <img src={circularPfp} alt="Logo" className="me-2" style={{width: 75, height: 75}}/>
+            <span>
+              abeloscher
+            </span>
+          </h1>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+      <hr className="border border-dark border-5"/>
+      <PostPreviewContainer />
     </div>
   );
 }
